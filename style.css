@@ -15,30 +15,27 @@ header {
 
 /* Navbar Styling */
 .navbar {
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center the navigation items */
-    padding: 10px 0; /* Vertical padding for the navbar */
-    background-color: #f9f9f9; /* Background color for the navbar */
+    display: flex;
+    justify-content: center; /* Center the items */
+    padding: 10px; /* Space around the nav */
+    background-color: #007BFF; /* Blue background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    border-radius: 5px; /* Rounded corners */
 }
 
 .nav-button {
-    text-decoration: none; /* Remove underline from links */
-    color: #fff; /* Text color */
-    background-color: #007BFF; /* Primary blue color for buttons */
-    padding: 10px 20px; /* Padding around the buttons */
-    margin: 0 10px; /* Horizontal space between buttons */
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text */
+    background-color: #0056b3; /* Button background color */
+    padding: 10px 20px; /* Padding for buttons */
     border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    margin: 0 10px; /* Space between buttons */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
 }
 
 .nav-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: scale(1.05); /* Slight scale effect on hover */
-}
-
-/* Recently Viewed Section */
-#recently-viewed {
-    text-align: center; /* Center align the recently viewed section */
+    background-color: #004494; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 /* Footer Styling */
