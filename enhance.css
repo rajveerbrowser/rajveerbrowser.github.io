@@ -16,12 +16,6 @@ header {
     overflow: hidden; /* Hide overflow */
 }
 
-#iframe-crop {
-    width: 100%;
-    height: 100%;
-    overflow: hidden; /* Hide overflow from the iframe */
-}
-
 iframe {
     border: none; /* No border */
     width: 100%; /* Full width of the container */
