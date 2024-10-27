@@ -1,90 +1,106 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif; /* Set font for the entire page */
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif; /* Set a default font */
+    line-height: 1.6; /* Improve readability */
 }
 
 /* Header Styles */
 header {
-    background: #007BFF; /* Blue background for header */
-    color: white; /* White text color */
-    padding: 10px;
-    text-align: center;
+    background: #007BFF; /* Header background color */
+    color: white; /* Header text color */
+    padding: 20px; /* Padding for header */
+    text-align: center; /* Center align text */
 }
 
 header h1 {
     margin: 0; /* Remove default margin */
-    font-size: 2em; /* Size of the header text */
+    font-size: 2.5em; /* Increase font size */
 }
 
 header p {
-    margin: 5px 0 15px; /* Margin for the paragraph */
-    font-size: 1.1em; /* Size of the paragraph text */
+    margin: 5px 0 15px; /* Add margin to paragraph */
+    font-size: 1.2em; /* Font size for paragraph */
 }
 
-/* Navbar Styling */
+/* Navbar Styles */
 .navbar {
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center the navbar items */
-    gap: 15px; /* Space between buttons */
-    padding: 15px; /* Padding around navbar */
-    background-color: #f9f9f9; /* Light background for navbar */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center nav items */
+    gap: 20px; /* Space between buttons */
+    padding: 15px; /* Padding around the nav */
+    background-color: #2c3e50; /* Navbar background color */
 }
 
 .nav-button {
     text-decoration: none; /* Remove underline from links */
-    color: #fff; /* Text color */
+    color: #fff; /* Text color for buttons */
     background-color: #007BFF; /* Button background color */
     padding: 10px 20px; /* Padding for buttons */
-    border-radius: 8px; /* Rounded corners */
-    font-weight: bold; /* Bold text */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
 }
 
 .nav-button:hover {
     background-color: #0056b3; /* Darker blue on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05); /* Scale effect on hover */
 }
 
-/* Responsive Navbar */
-@media (max-width: 600px) {
-    .navbar {
-        flex-direction: column; /* Stack buttons vertically on small screens */
-        align-items: center; /* Center align items */
-    }
-
-    .nav-button {
-        width: 80%; /* Make buttons wider */
-        text-align: center; /* Center text inside buttons */
-        margin-bottom: 10px; /* Space below buttons */
-    }
+/* Input and Button Styling */
+input {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding for inputs */
+    margin: 10px 0; /* Margin for spacing */
 }
 
-/* Iframe Styling */
-#iframe {
-    width: 100%; /* Full width */
-    height: 600px; /* Set height */
+button {
+    padding: 10px; /* Padding for buttons */
+    cursor: pointer; /* Pointer on hover */
+    background: #007BFF; /* Blue button background */
+    color: white; /* Button text color */
     border: none; /* No border */
-    margin-top: 20px; /* Space above iframe */
+    width: 100%; /* Full width */
+    transition: background-color 0.3s ease; /* Transition effect */
 }
 
-/* Recently Viewed Sites */
+button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+/* Recently Viewed Sites Styling */
 #recently-viewed {
-    text-align: center; /* Center align */
-    margin-top: 20px; /* Space above section */
+    text-align: center; /* Center align the section */
+    margin-top: 20px; /* Add margin */
 }
 
 #recent-sites {
     list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
 }
 
-/* Footer Styling */
+/* Footer Styles */
 footer {
-    text-align: center; /* Center align */
+    text-align: center; /* Center align footer */
     margin-top: 20px; /* Space above footer */
     padding: 10px 0; /* Padding for footer */
-    background-color: #f1f1f1; /* Light grey background */
+    background-color: #f1f1f1; /* Footer background color */
+    position: relative; /* Ensure footer stays at the bottom */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column; /* Stack buttons on small screens */
+        align-items: center; /* Center the buttons */
+    }
+
+    .nav-button {
+        width: 80%; /* Full width for buttons on small screens */
+        margin-bottom: 10px; /* Spacing between buttons */
+    }
 }
