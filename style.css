@@ -1,106 +1,60 @@
-/* Basic Reset */
-* {
+/* General Body Style */
+body {
+    font-family: Arial, sans-serif; /* Font for the entire body */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Body Styles */
-body {
-    font-family: Arial, sans-serif; /* Set a default font */
-    line-height: 1.6; /* Improve readability */
-}
-
-/* Header Styles */
+/* Header Styling */
 header {
     background: #007BFF; /* Header background color */
     color: white; /* Header text color */
-    padding: 20px; /* Padding for header */
-    text-align: center; /* Center align text */
+    padding: 20px; /* Padding around the header */
+    text-align: center; /* Center text in the header */
 }
 
-header h1 {
-    margin: 0; /* Remove default margin */
-    font-size: 2.5em; /* Increase font size */
-}
-
-header p {
-    margin: 5px 0 15px; /* Add margin to paragraph */
-    font-size: 1.2em; /* Font size for paragraph */
-}
-
-/* Navbar Styles */
+/* Navbar Styling */
 .navbar {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center nav items */
-    gap: 20px; /* Space between buttons */
-    padding: 15px; /* Padding around the nav */
-    background-color: #2c3e50; /* Navbar background color */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the navigation items */
+    padding: 10px 0; /* Vertical padding for the navbar */
+    background-color: #f9f9f9; /* Background color for the navbar */
 }
 
 .nav-button {
     text-decoration: none; /* Remove underline from links */
-    color: #fff; /* Text color for buttons */
-    background-color: #007BFF; /* Button background color */
-    padding: 10px 20px; /* Padding for buttons */
+    color: #fff; /* Text color */
+    background-color: #007BFF; /* Primary blue color for buttons */
+    padding: 10px 20px; /* Padding around the buttons */
+    margin: 0 10px; /* Horizontal space between buttons */
     border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
 }
 
 .nav-button:hover {
     background-color: #0056b3; /* Darker blue on hover */
-    transform: scale(1.05); /* Scale effect on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
 }
 
-/* Input and Button Styling */
-input {
-    width: 100%; /* Full width for inputs */
-    padding: 10px; /* Padding for inputs */
-    margin: 10px 0; /* Margin for spacing */
-}
-
-button {
-    padding: 10px; /* Padding for buttons */
-    cursor: pointer; /* Pointer on hover */
-    background: #007BFF; /* Blue button background */
-    color: white; /* Button text color */
-    border: none; /* No border */
-    width: 100%; /* Full width */
-    transition: background-color 0.3s ease; /* Transition effect */
-}
-
-button:hover {
-    background: #0056b3; /* Darker blue on hover */
-}
-
-/* Recently Viewed Sites Styling */
+/* Recently Viewed Section */
 #recently-viewed {
-    text-align: center; /* Center align the section */
-    margin-top: 20px; /* Add margin */
+    text-align: center; /* Center align the recently viewed section */
 }
 
-#recent-sites {
-    list-style-type: none; /* Remove bullet points */
-}
-
-/* Footer Styles */
+/* Footer Styling */
 footer {
-    text-align: center; /* Center align footer */
-    margin-top: 20px; /* Space above footer */
-    padding: 10px 0; /* Padding for footer */
-    background-color: #f1f1f1; /* Footer background color */
-    position: relative; /* Ensure footer stays at the bottom */
+    text-align: center; /* Center align the footer */
+    margin-top: 20px; /* Margin above the footer */
+    padding: 10px; /* Padding around the footer */
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
     .navbar {
         flex-direction: column; /* Stack buttons on small screens */
-        align-items: center; /* Center the buttons */
     }
-
     .nav-button {
-        width: 80%; /* Full width for buttons on small screens */
-        margin-bottom: 10px; /* Spacing between buttons */
+        width: 80%; /* Button width on small screens */
+        margin-bottom: 10px; /* Space between stacked buttons */
     }
 }
