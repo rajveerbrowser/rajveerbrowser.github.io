@@ -140,6 +140,39 @@ button:hover {
     text-decoration: none;
     display: block;
 }
+/* Navbar Styling */
+.navbar {
+    background-color: #f9f9f9; /* Light background */
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 10px; /* Space between buttons */
+}
+
+.nav-button {
+    text-decoration: none;
+    color: white; /* White text */
+    background-color: #007BFF; /* Blue background */
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block; /* Makes the button size consistent */
+}
+
+.nav-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
 
 .dropdown a:hover {
     background-color: #f1f1f1; /* Light grey on hover */
