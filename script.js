@@ -13,3 +13,4 @@ function addRecentlyViewed(url) {
     listItem.appendChild(link);
     recentlyViewed.appendChild(listItem);
 }
+<script src="//code.tidio.co/ixhtgecylrkchllxu8gsk4vtbmtjkxtv.js" async></script>
