@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    background-color: #0056b3;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF; /* Primary blue color for buttons */
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+/* Iframe Container */
+#iframe-container {
+    margin: 20px auto;
+    max-width: 90%; /* Responsive max width */
+}
+
+iframe {
+    border: none;
+    width: 100%; /* Full width of the container */
+    height: 600px; /* Fixed height for the iframe */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Messages Section */
+#messages {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-height: 400px;
+    overflow-y: auto;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Message Styling */
+#messages div {
+    margin-bottom: 10px;
+}
+
+/* Input and Button Styling */
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    background: #007BFF; /* Blue button */
+    color: white;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.9em;
+}
