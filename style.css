@@ -1,49 +1,65 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif; /* Font for the entire page */
+    font-family: Arial, sans-serif; /* Set font for the entire page */
     margin: 0;
     padding: 0;
 }
 
 /* Header Styles */
 header {
-    background: #007BFF; /* Header background color */
-    color: white; /* Header text color */
+    background: #007BFF; /* Blue background for header */
+    color: white; /* White text color */
     padding: 10px;
     text-align: center;
 }
 
+header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Size of the header text */
+}
+
+header p {
+    margin: 5px 0 15px; /* Margin for the paragraph */
+    font-size: 1.1em; /* Size of the paragraph text */
+}
+
 /* Navbar Styling */
 .navbar {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the navbar items */
+    gap: 15px; /* Space between buttons */
+    padding: 15px; /* Padding around navbar */
     background-color: #f9f9f9; /* Light background for navbar */
-    padding: 10px 0;
-}
-
-.navbar ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Use flexbox for horizontal layout */
-    justify-content: center; /* Center items */
-}
-
-.navbar li {
-    margin: 0 10px; /* Space between buttons */
 }
 
 .nav-button {
     text-decoration: none; /* Remove underline from links */
-    color: white; /* Text color */
-    background-color: #007BFF; /* Blue background */
-    padding: 10px 20px; /* Button padding */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
-    display: inline-block; /* Makes the button size consistent */
+    color: #fff; /* Text color */
+    background-color: #007BFF; /* Button background color */
+    padding: 10px 20px; /* Padding for buttons */
+    border-radius: 8px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
 
 .nav-button:hover {
     background-color: #0056b3; /* Darker blue on hover */
     transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive Navbar */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center; /* Center align items */
+    }
+
+    .nav-button {
+        width: 80%; /* Make buttons wider */
+        text-align: center; /* Center text inside buttons */
+        margin-bottom: 10px; /* Space below buttons */
+    }
 }
 
 /* Iframe Styling */
