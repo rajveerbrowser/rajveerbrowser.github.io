@@ -1,100 +1,126 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header Styles */
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Header Styling */
 header {
-    background: #007BFF;
+    background-color: #007BFF;
     color: white;
     padding: 20px;
+    width: 100%;
     text-align: center;
 }
 
-/* Navigation Bar */
+header h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+/* Navigation */
 .navbar {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    padding: 15px;
-    background-color: #0056b3;
+    gap: 1em;
+    flex-wrap: wrap;
 }
 
 .nav-button {
     text-decoration: none;
-    color: #fff;
-    background-color: #007BFF; /* Primary blue color for buttons */
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: white;
+    background-color: #0056b3;
+    padding: 0.8em 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
 }
 
 .nav-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: scale(1.05);
+    background-color: #003d80;
 }
 
-/* Iframe Container */
-#iframe-container {
-    margin: 20px auto;
-    max-width: 90%; /* Responsive max width */
-}
-
-iframe {
-    border: none;
-    width: 100%; /* Full width of the container */
-    height: 600px; /* Fixed height for the iframe */
-    border-radius: 5px; /* Rounded corners */
-}
-
-/* Messages Section */
-#messages {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    max-height: 400px;
-    overflow-y: auto;
-    margin: 20px auto;
-    width: 90%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Message Styling */
-#messages div {
-    margin-bottom: 10px;
-}
-
-/* Input and Button Styling */
-input {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px;
-    cursor: pointer;
-    background: #007BFF; /* Blue button */
-    color: white;
-    border: none;
+/* Iframe Styling */
+main {
     width: 100%;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
-button:hover {
-    background: #0056b3; /* Darker blue on hover */
+#iframe {
+    width: 100%;
+    max-width: 1200px;
+    height: 75vh;
+    border: none;
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    width: 100%;
     text-align: center;
-    margin: 20px 0;
-    font-size: 0.9em;
+}
+
+/* Responsive Typography */
+h1 {
+    font-size: clamp(1.8rem, 2.5vw + 1rem, 2.5rem);
+}
+
+p, .nav-button {
+    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.1rem);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+    
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-button {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+
+    #browser {
+        height: 65vh;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+    
+    #browser {
+        height: 60vh;
+    }
 }
